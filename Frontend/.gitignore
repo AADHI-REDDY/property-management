@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Allow these specific environment files for our build pipeline
+!.env.development
+!.env.production
+```
+
+### ## Final Steps
+
+Now that you've told Git to stop ignoring your files, you can push them.
+
+1.  **Save** the updated `.gitignore` file.
+2.  **Run these commands** in your terminal:
+    ```bash
+    # This will now add the .gitignore file AND your two .env files
+    git add .
+
+    git commit -m "fix: allow env files to be committed"
+
+    git push
+    
